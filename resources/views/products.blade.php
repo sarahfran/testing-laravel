@@ -13,7 +13,7 @@
 	<h2>Most Popular Products</h2>
 
 	@foreach($products as $product)
-		<p>{{ $product['name'] }} at {{ $product['price'] }} each</p>
+		<p>{{ $product->name }} at {{ $product->price }} each and they are  {{ $product->description }} </p>
 	@endforeach
 
 @endsection
