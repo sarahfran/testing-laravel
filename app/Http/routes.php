@@ -23,9 +23,27 @@ Route::get('contact', function () {
 	return view('contact');
 });
 
-Route::get('products', function () {
-	return view('products');
+Route::post('contact', function () {
+	return "Send contact form";
 });
+
+Route::get('products', 'ProductsController@index');
+
+// Route::get('products', function () {
+
+	// Some products
+	// $products = [ 'Apple', 'Bananas', 'Carrots', 'Date', 'Eggplant' ];
+	// $mostPopularProducts = ['Watermelon', 'Grapes', 'Mandarin', 'Orange'];
+
+	// return view('products', [ 
+	// 	'products' => $products,
+	// 	'popProds' => $mostPopularProducts
+
+
+	// ]);
+
+// 	return view('products', compact('products', 'mostPopularProducts'));
+// });
 
 
 /*
