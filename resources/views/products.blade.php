@@ -4,6 +4,8 @@
 
 	<h1>Products</h1>
 
+	<a href="/products/create">Add new Product</a>
+
 	<h1>What's Hot right now</h1>
 
 	@foreach($mostPopularProducts as $product)
@@ -13,7 +15,7 @@
 	<h2>Most Popular Products</h2>
 
 	@foreach($products as $product)
-		<p>{{ $product->name }} at {{ $product->price }} each and they are  {{ $product->description }} </p>
+		<p><a href="/products/{{ $product->id }}">{{ $product->name }}</a></p>
 	@endforeach
 
 @endsection
